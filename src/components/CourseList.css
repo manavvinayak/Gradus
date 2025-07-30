@@ -1,0 +1,78 @@
+.course-list {
+  height: 100%;
+}
+
+.course-list h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.course-list-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gray-color);
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.course-table th,
+.course-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.course-table th {
+  font-weight: 600;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.course-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.course-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.course-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  color: var(--gray-color);
+  transition: var(--transition);
+}
+
+.course-action-btn:hover {
+  color: var(--primary-color);
+}
+
+.course-action-btn.edit:hover {
+  color: var(--primary-color);
+}
+
+.course-action-btn.delete:hover {
+  color: var(--danger-color);
+}
+
+.edit-form-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 768px) {
+  .course-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

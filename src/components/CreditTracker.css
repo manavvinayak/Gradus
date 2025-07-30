@@ -1,0 +1,124 @@
+.credit-tracker {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+}
+
+.credit-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.credit-card {
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+}
+
+.credit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.credit-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.credit-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.edit-credits-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--gray-color);
+  transition: var(--transition);
+}
+
+.edit-credits-btn:hover {
+  color: var(--primary-color);
+}
+
+.edit-credits-form {
+  margin-top: 0.5rem;
+}
+
+.edit-credits-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.progress-section {
+  margin-bottom: 2rem;
+}
+
+.progress-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.progress-container {
+  height: 24px;
+  background-color: var(--light-color);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  border-radius: 12px;
+  transition: width 0.5s ease;
+}
+
+.progress-label {
+  text-align: center;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.credit-info {
+  margin-top: 2rem;
+}
+
+.credit-info h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.info-card {
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.info-card p {
+  margin-bottom: 1rem;
+  color: var(--gray-color);
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}

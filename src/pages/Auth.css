@@ -1,0 +1,148 @@
+.auth-page {
+  min-height: calc(100vh - 64px - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #f5f7fb 0%, #e4e9f7 100%);
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2.5rem;
+}
+
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: var(--gray-color);
+  margin-bottom: 2rem;
+}
+
+.auth-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-control.error {
+  border-color: var(--danger-color);
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-color);
+}
+
+.forgot-password {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.auth-divider {
+  position: relative;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.auth-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--light-gray);
+}
+
+.auth-divider span {
+  position: relative;
+  background-color: var(--white);
+  padding: 0 1rem;
+  color: var(--gray-color);
+  font-size: 0.875rem;
+}
+
+.btn-google {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; 
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  color: var(--dark-color);
+  font-weight: 600;
+  padding: 10px;
+}
+
+.btn-google:hover {
+  background-color: var(--light-color);
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--gray-color);
+}
+
+.auth-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+
+  .form-checkbox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

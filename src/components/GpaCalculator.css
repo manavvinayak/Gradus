@@ -1,0 +1,135 @@
+.gpa-calculator {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+}
+
+.gpa-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.gpa-card {
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.gpa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.gpa-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.gpa-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.gpa-info {
+  font-size: 0.875rem;
+  color: var(--gray-color);
+}
+
+.semester-selector {
+  margin-top: 1rem;
+}
+
+.semester-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--gray-color);
+}
+
+.semester-selector select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+}
+
+.gpa-conversion {
+  margin-bottom: 2rem;
+}
+
+.gpa-conversion h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.conversion-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.conversion-card {
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.conversion-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.conversion-formula {
+  font-family: monospace;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: var(--border-radius);
+}
+
+.conversion-result {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.grade-table {
+  margin-top: 2rem;
+}
+
+.grade-table h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.grade-table table {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.grade-table th,
+.grade-table td {
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid var(--light-gray);
+}
+
+.grade-table th {
+  background-color: var(--light-color);
+  font-weight: 600;
+}
+
+.grade-table tr:nth-child(even) {
+  background-color: var(--light-color);
+}
