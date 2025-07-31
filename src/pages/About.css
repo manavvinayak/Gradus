@@ -33,8 +33,10 @@
 }
 
 .about-image img {
-  width: 50vw;
-  height: 50vh;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
   margin-left: 1px;
   margin-top: 2px;
   border-radius: var(--border-radius);
@@ -144,6 +146,12 @@
   .about-content,
   .team-section {
     padding: 3rem 0;
+  }
+
+  .about-image img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .team-grid {
